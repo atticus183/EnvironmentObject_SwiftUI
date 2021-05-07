@@ -10,7 +10,11 @@ import SwiftUI
 struct TodosByDateCreated: View {
 
     var body: some View {
-        Text("3")
+        NavigationView {
+            VStack {
+                Text("3")
+            }.navigationTitle("TodosByDateCreated")
+        }
     }
 }
 

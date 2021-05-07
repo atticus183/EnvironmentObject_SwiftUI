@@ -9,7 +9,11 @@ import SwiftUI
 
 struct TodosZtoA: View {
     var body: some View {
-        Text("2")
+        NavigationView {
+            VStack {
+                Text("2")
+            }.navigationTitle("TodosZtoA")
+        }
     }
 }
 

@@ -9,8 +9,10 @@ import SwiftUI
 
 struct TodosAtoZ: View {
     var body: some View {
-        VStack {
-            Text("1")
+        NavigationView {
+            VStack {
+                Text("1")
+            }.navigationTitle("TodosAtoZ")
         }
     }
 }

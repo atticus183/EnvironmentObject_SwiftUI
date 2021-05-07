@@ -11,22 +11,15 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         TabView {
-            //1st tab
-            NavigationView {
-                TodosAtoZ().navigationTitle("Todos A to Z")
-            }.tabItem {
+            TodosAtoZ().tabItem {
                 Label("A to Z", systemImage: "list.dash")
             }
 
-            NavigationView {
-                TodosZtoA().navigationTitle("Todos A to A")
-            }.tabItem {
+            TodosZtoA().tabItem {
                 Label("Z to A", systemImage: "list.triangle")
             }
 
-            NavigationView {
-                TodosByDateCreated().navigationTitle("by Date Created")
-            }.tabItem {
+            TodosByDateCreated().tabItem {
                 Label("By Date", systemImage: "calendar.circle.fill")
             }
         }.accentColor(.orange)
