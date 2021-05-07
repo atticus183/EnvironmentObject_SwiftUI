@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		12B3D03A2644D7B9002B76CD /* EnvironmentObject_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B3D0392644D7B9002B76CD /* EnvironmentObject_SwiftUIApp.swift */; };
-		12B3D03C2644D7B9002B76CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B3D03B2644D7B9002B76CD /* ContentView.swift */; };
 		12B3D03E2644D7BB002B76CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12B3D03D2644D7BB002B76CD /* Assets.xcassets */; };
 		12B3D0412644D7BB002B76CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12B3D0402644D7BB002B76CD /* Preview Assets.xcassets */; };
+		12B3D04F2644D944002B76CD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B3D04E2644D944002B76CD /* MainView.swift */; };
+		12B3D0532644D97F002B76CD /* TodosAtoZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B3D0522644D97F002B76CD /* TodosAtoZ.swift */; };
+		12B3D0562644D997002B76CD /* TodosZtoA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B3D0552644D997002B76CD /* TodosZtoA.swift */; };
+		12B3D0592644D9A9002B76CD /* TodosByDateCreated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B3D0582644D9A9002B76CD /* TodosByDateCreated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12B3D0362644D7B9002B76CD /* EnvironmentObject_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnvironmentObject_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12B3D0392644D7B9002B76CD /* EnvironmentObject_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObject_SwiftUIApp.swift; sourceTree = "<group>"; };
-		12B3D03B2644D7B9002B76CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		12B3D03D2644D7BB002B76CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12B3D0402644D7BB002B76CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		12B3D0422644D7BB002B76CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12B3D04E2644D944002B76CD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		12B3D0522644D97F002B76CD /* TodosAtoZ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosAtoZ.swift; sourceTree = "<group>"; };
+		12B3D0552644D997002B76CD /* TodosZtoA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosZtoA.swift; sourceTree = "<group>"; };
+		12B3D0582644D9A9002B76CD /* TodosByDateCreated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosByDateCreated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				12B3D0392644D7B9002B76CD /* EnvironmentObject_SwiftUIApp.swift */,
-				12B3D03B2644D7B9002B76CD /* ContentView.swift */,
+				12B3D04E2644D944002B76CD /* MainView.swift */,
+				12B3D0522644D97F002B76CD /* TodosAtoZ.swift */,
+				12B3D0552644D997002B76CD /* TodosZtoA.swift */,
+				12B3D0582644D9A9002B76CD /* TodosByDateCreated.swift */,
 				12B3D03D2644D7BB002B76CD /* Assets.xcassets */,
 				12B3D0422644D7BB002B76CD /* Info.plist */,
 				12B3D03F2644D7BB002B76CD /* Preview Content */,
@@ -138,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12B3D03C2644D7B9002B76CD /* ContentView.swift in Sources */,
+				12B3D0532644D97F002B76CD /* TodosAtoZ.swift in Sources */,
+				12B3D0562644D997002B76CD /* TodosZtoA.swift in Sources */,
+				12B3D04F2644D944002B76CD /* MainView.swift in Sources */,
 				12B3D03A2644D7B9002B76CD /* EnvironmentObject_SwiftUIApp.swift in Sources */,
+				12B3D0592644D9A9002B76CD /* TodosByDateCreated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
