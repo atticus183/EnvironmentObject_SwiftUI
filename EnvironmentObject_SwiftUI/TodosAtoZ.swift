@@ -48,7 +48,7 @@ struct TodosAtoZ: View {
                 }, label: {
                     Image(systemName: "plus")
                 }).sheet(isPresented: $showingSheet) {
-                    EnterTodoView()
+                    EnterTodoView().environmentObject(todoStorage)
                 }
             }
         }

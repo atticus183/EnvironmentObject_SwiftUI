@@ -22,6 +22,7 @@ struct EnterTodoView: View {
 
             Button("Add") {
                 if !newTodoTitle.isEmpty {
+                    // FIXME: Modal view won't dismiss if adding a todo to todoStorage
                     todoStorage.add(todo: Todo(name: newTodoTitle))
                     presentationMode.wrappedValue.dismiss()
                 }
