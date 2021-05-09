@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct EnvironmentObject_SwiftUIApp: App {
+    @StateObject var todos = TodoStorage()
+
     var body: some Scene {
         WindowGroup {
-            MainView()
+            MainView().environmentObject(todos)
         }
     }
 }
