@@ -31,6 +31,7 @@ struct TodosAtoZ: View {
                                     .frame(width: 25, height: 25, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                     .foregroundColor(Color.pink)
                             })
+
                             Text(todo.name)
                                 .font(.body)
                         }
@@ -49,6 +50,8 @@ struct TodosAtoZ: View {
                     Image(systemName: "plus")
                 }).sheet(isPresented: $showingSheet) {
                     EnterTodoView().environmentObject(todoStorage)
+
+                    //                    EnterTodoView(showingSheet: $showingSheet)
                 }
             }
         }

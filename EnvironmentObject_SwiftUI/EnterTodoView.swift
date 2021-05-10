@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct EnterTodoView: View {
-    @EnvironmentObject var todoStorage: TodoStorage
+    @EnvironmentObject private var todoStorage: TodoStorage
+//    @Binding var showingSheet: Bool
     @Environment(\.presentationMode) private var presentationMode
     @State var newTodoTitle: String = ""
 
@@ -25,6 +26,7 @@ struct EnterTodoView: View {
                     // FIXME: Modal view won't dismiss if adding a todo to todoStorage
                     todoStorage.add(todo: Todo(name: newTodoTitle))
                     presentationMode.wrappedValue.dismiss()
+//                    showingSheet = false
                 }
             }
             .font(.headline)
@@ -40,6 +42,7 @@ struct EnterTodoView: View {
 
 struct EnterTodoView_Previews: PreviewProvider {
     static var previews: some View {
+//        EnterTodoView(showingSheet: .constant(true)).environmentObject(TodoStorage())
         EnterTodoView().environmentObject(TodoStorage())
     }
 }

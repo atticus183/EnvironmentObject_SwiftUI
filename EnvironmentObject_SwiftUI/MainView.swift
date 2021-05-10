@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct MainView: View {
+    @StateObject var todoStorage = TodoStorage()
+
     var body: some View {
         TabView {
             TodosAtoZ().tabItem {
