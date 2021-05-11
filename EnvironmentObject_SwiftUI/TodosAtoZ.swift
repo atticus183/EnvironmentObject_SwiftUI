@@ -47,10 +47,10 @@ struct TodosAtoZ: View {
                     showingSheet = true
                 }, label: {
                     Image(systemName: "plus")
-                }).sheet(isPresented: $showingSheet) {
-                    EnterTodoView().environmentObject(todoStorage)
-                }
+                })
             }
+        }.sheet(isPresented: $showingSheet) {
+            EnterTodoView().environmentObject(todoStorage)
         }
     }
 }
